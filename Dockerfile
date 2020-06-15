@@ -9,3 +9,6 @@ RUN \
     curl -L https://npmjs.org/install.sh | sh
 
 WORKDIR /app
+
+ADD Gemfile* /app/
+RUN bundle install
